@@ -7,7 +7,7 @@
 body {
   background: url("/img/galaxy.gif");
 }
-.h1{
+#title{
   float: center;
   align: center;
   text-align: center;
