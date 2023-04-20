@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
 
 * {
-  font-family: Roboto;
+  font-family: Mukta;
 }
 
 body {
-  background: black;
+  background: url("/images/galaxy.gif");
 }
 
 #search {
