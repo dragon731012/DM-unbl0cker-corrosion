@@ -2,7 +2,7 @@
 <script src="/js/go.js"></script>
 <meta property="og:image" content="/img/logo.png">
 <img src="/img/galaxy.gif" class="bg"/>
-<font size="+2">
+<font id="titlesize" size="+2">
 <div class="title">
   <h1>DM Unblocker</h1>
 </div>
@@ -25,7 +25,7 @@
 }
 .searchbox{
   width:60%;
-  height:50px;
+  height:10%;
   position: absolute;
   left:20%;
   top:45%;
@@ -51,7 +51,7 @@
 }
 </style>
 <script>
-
+titlesize.size=screen.width/360;
 document.addEventListener("keypress", function onEvent(event) {
     if (event.key === "Enter") {
       var url1=searchbox.innerText;
