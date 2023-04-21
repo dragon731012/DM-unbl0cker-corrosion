@@ -8,7 +8,7 @@
 </div>
 </font>
 <div class="searchbox">
-  <input class="search" placeholder='Search or type a url' type='text'/>
+  <input class="search" id="search" placeholder='Search or type a url' type='text'/>
 </div>
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
@@ -25,9 +25,9 @@
 }
 .searchbox{
   width:60%;
-  height:200px;
+  height:50px;
   position: absolute;
-  left:15%;
+  left:20%;
   top:45%;
 }
 .search{
@@ -50,3 +50,10 @@
   color: #FFFFFF;
 }
 </style>
+<script>
+document.addEventListener("keypress", function onEvent(event) {
+    else if (event.key === "Enter") {
+        go(search.innerText);
+    }
+});
+</script>
