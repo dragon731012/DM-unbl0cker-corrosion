@@ -1,16 +1,16 @@
 {
-    "name": "Shadow",
+    "name": "DM Unbl0cker",
     "version": "1.0.0",
-    "repository": "https://github.com/FogNetwork/Shadow",
+    "repository": "https://github.com/dragon731012/DM-unbl0cker-3",
     "bugs": {
-        "url": "https://github.com/FogNetwork/Shadow/issues"
+        "url": "https://github.com/dragon731012/DM-unbl0cker-3/issues"
     },
-    "description": "Shadow is a simple yet stunning service built to access any website",
+    "description": "Bypass internet blockers",
     "main": "app.js",
     "scripts": {
         "start": "node app.js"
     },
-    "author": "Fog Network",
+    "author": "dragonmaster73101 and fog network",
     "license": "MIT",
     "dependencies": {
         "acorn-hammerhead": "^0.5.0",
