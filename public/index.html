@@ -8,6 +8,10 @@
 <div class="searchbox" id="searchbox">
   <input class="search" id="search" placeholder='Search or type a url' type='text'/>
 </div>
+<div class="icons">
+  <img src="/img/github.png" class="github" id="github">
+  <img src="/img/discord.png" class="discord" id="discord">
+</div>
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
 
@@ -55,12 +59,29 @@
   color: #FFFFFF;
   font-size: 1.2em;
 }
+.icons{
+  width: 100%;
+  height: 12%;
+}
+.github{
+  height:100%;
+  width:10%;
+}
+.discord{
+  height:100%;
+  width:10%;
+}
 </style>
 <script>
 var fontsize1=2560/screen.width*18;
 var fontsize2=2560/screen.width*8;
+var githubanddiscordsize=screen.height*0.12;
+  
 title1.style.fontSize = fontsize1+"px";
 search.style.fontSize = fontsize2+"px";
+github.style.width = githubanddiscordsize+"px";
+discord.style.width = githubanddiscordsize+"px";
+  
 document.addEventListener("keypress", function onEvent(event) {
     if (event.key === "Enter") {
       var url=search.value;
