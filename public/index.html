@@ -55,6 +55,7 @@
 document.addEventListener("keypress", function onEvent(event) {
     if (event.key === "Enter") {
       var url1=searchbox.innerText;
+      alert(url1);
         window.location.pathname="/service/gateway?url="+url1;
     }
 });
