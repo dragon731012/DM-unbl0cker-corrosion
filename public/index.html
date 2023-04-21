@@ -24,6 +24,7 @@
 .searchbox{
   width:80%;
   height:8%;
+  color: #FFFFFF;
   position: absolute;
   left:10%;
   top:45%;
@@ -55,7 +56,8 @@ fontsize1=2560/screen.width*25;
 title1.style.fontSize = fontsize1+"px";
 document.addEventListener("keypress", function onEvent(event) {
     if (event.key === "Enter") {
-      go(search.value);
+      var url=search.value;
+      window.location.pathname="/service/gateway?url=" + url;
     }
 });
 </script>
