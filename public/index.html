@@ -2,11 +2,9 @@
 <script src="/js/go.js"></script>
 <meta property="og:image" content="/img/logo.png">
 <img src="/img/galaxy.gif" class="bg"/>
-<font id="titlesize" size="+2">
 <div class="title">
-  <h1>DM Unblocker</h1>
+  <h1 id="title1">DM Unblocker</h1>
 </div>
-</font>
 <div class="searchbox" id="searchbox">
   <input class="search" id="search" placeholder='Search or type a url' type='text'/>
 </div>
@@ -52,7 +50,8 @@
 }
 </style>
 <script>
-titlesize.size=screen.width/360;
+fontsize1=2560/screen.width;
+title1.style.fontSize = fontsize1+"px";
 document.addEventListener("keypress", function onEvent(event) {
     if (event.key === "Enter") {
       go(search.value);
