@@ -60,6 +60,9 @@ title1.style.fontSize = fontsize1+"px";
 document.addEventListener("keypress", function onEvent(event) {
     if (event.key === "Enter") {
       var url=search.value;
+      if (url.includes(".")==false){
+        url="https://www.google.com/search?q="+url;
+      }
       window.location.href=window.location.href+"service/gateway?url=" + url;
     }
 });
