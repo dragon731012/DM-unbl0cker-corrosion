@@ -1,11 +1,9 @@
 function hidesugg() {
   document.getElementById("search").style.borderRadius = "100px";
-  document.getElementById("suggestions").style.display = "none"
 }
 
 function showsugg() {
   document.getElementById("search").style.borderRadius = "25px 25px 0 0";
-  document.getElementById("suggestions").style.display = "inherit"
 }
 
 function sugggo(suggtext) {
@@ -57,13 +55,13 @@ showsugg()
 })
 
 function go(url) {
-var web = document.getElementById("web")
-var webnav = document.getElementById("webnav")
-var settingsbtn = document.getElementById("settingsbtn")
-web.src = "/service/gateway?url=" + url
-web.style.display = "initial"
-webnav.style.display = "flex"
-settingsbtn.style.display = "none"
+var web = document.getElementById("web");
+var webnav = document.getElementById("webnav");
+var settingsbtn = document.getElementById("settingsbtn");
+web.src = "/service/gateway?url=" + url;
+web.style.display = "initial";
+webnav.style.display = "flex";
+settingsbtn.style.display = "none";
 }
 
 function closeweb() {
