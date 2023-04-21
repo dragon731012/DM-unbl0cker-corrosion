@@ -35,6 +35,7 @@
   border-radius: 25px;
   border-radius: 25px;
   border: 4px solid #FFFFFF;
+  color: #FFFFFF;
   width:100%;
   height:100%;
 }
@@ -54,8 +55,7 @@
 titlesize.size=screen.width/360;
 document.addEventListener("keypress", function onEvent(event) {
     if (event.key === "Enter") {
-      var url1=search.value;
-      window.location.pathname="/service/gateway?url="+url1;
+      go(search.value);
     }
 });
 </script>
