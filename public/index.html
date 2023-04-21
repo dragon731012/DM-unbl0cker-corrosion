@@ -52,8 +52,8 @@
 </style>
 <script>
 document.addEventListener("keypress", function onEvent(event) {
-    else if (event.key === "Enter") {
-        go(search.innerText);
+    if (event.key === "Enter") {
+        window.location.href=window.location.href+"/service/gateway?url="+search.innerText;
     }
 });
 </script>
