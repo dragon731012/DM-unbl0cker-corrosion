@@ -91,7 +91,10 @@
 }
 </style>
 <script>
-var proxy="Corrosion";
+var proxy=localStorage.getItem("proxy");
+if (proxy==undefined){
+  proxy="Corrosion";
+}
 var fontsize1=2560/screen.width*18;
 var fontsize2=2560/screen.width*6;
 
