@@ -1,3 +1,9 @@
+<script>
+function blank(){
+  (function () {var url = document.URL; var urlObj = new window.URL(window.location.href); win = window.open(); win.document.body.style.margin = "0"; win.document.body.style.height = "100vh"; var iframe = win.document.createElement("iframe"); iframe.style.border = "none"; iframe.style.width = "100%"; iframe.style.height = "100%"; iframe.style.margin = "0"; iframe.referrerpolicy = "no-referrer"; iframe.allow = "fullscreen"; iframe.src = url.toString(); win.document.body.appendChild(iframe); var script = win.document.createElement("script"); script.src = "https://3kh0.github.io/js/main.js"; win.document.body.appendChild(script); })();
+}
+</script>
+
 <script src="/js/index.js"></script>
 <title>DM Unbl0cker</title>
 <script src="/js/go.js"></script>
@@ -10,6 +16,9 @@
   <input class="search" id="search" placeholder='Search Google or Type a URL' type='text'/>
 </div>
 <div class="icons">
+  <a onclick="blank();">
+    <img src="/img/IMG_3024.png" class="blank" id="blank"/>
+  </a>
   <a href="https://github.com/dragon731012">
     <img src="/img/github.png" class="github" id="github"/>
   </a>
@@ -77,6 +86,15 @@
   height:70px;
   left:0%;
 }
+
+.blank{
+  position: absolute;
+  height:100%;
+  width:70px;
+  height:70px;
+  right:0%;
+}
+
 .discord{
   position: absolute;
   height:100%;
